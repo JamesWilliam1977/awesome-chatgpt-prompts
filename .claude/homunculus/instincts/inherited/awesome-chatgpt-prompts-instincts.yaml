@@ -1,0 +1,638 @@
+# Instincts generated from https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+# Generated: 2026-04-29T04:18:22.171Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: awesome-chatgpt-prompts-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Commit Length
+
+## Action
+
+Keep commit messages concise (~44 characters)
+
+## Evidence
+
+- Average commit message length: 44 chars
+- Based on 100 commits
+
+---
+id: awesome-chatgpt-prompts-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: awesome-chatgpt-prompts-import-alias
+trigger: "when importing modules"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Import Alias
+
+## Action
+
+Use path aliases (@/, ~/) instead of relative imports
+
+## Evidence
+
+- Import analysis shows alias pattern
+- Example: import { x } from '@/lib/x'
+
+---
+id: awesome-chatgpt-prompts-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: awesome-chatgpt-prompts-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: __tests__, app, components, lib
+
+---
+id: awesome-chatgpt-prompts-test-framework
+trigger: "when writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Test Framework
+
+## Action
+
+Use vitest as the test framework
+
+## Evidence
+
+- Test framework detected: vitest
+- File pattern: *.test.ts
+
+---
+id: awesome-chatgpt-prompts-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: awesome-chatgpt-prompts-test-mocking
+trigger: "when mocking dependencies in tests"
+confidence: 0.75
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Test Mocking
+
+## Action
+
+Use vi.mock for mocking
+
+## Evidence
+
+- Mocking pattern detected: vi.mock
+- Consistent across test files
+
+---
+id: awesome-chatgpt-prompts-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Test Types
+
+## Action
+
+Write unit, integration tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, integration
+- Coverage config: yes
+
+---
+id: awesome-chatgpt-prompts-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~11x per month
+- Files: src/lib/auth/*, src/app/[username]/*, src/app/categories/[slug]/*
+
+---
+id: awesome-chatgpt-prompts-workflow-update-or-add-prompt
+trigger: "when doing update or add prompt"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Workflow Update Or Add Prompt
+
+## Action
+
+Follow the update-or-add-prompt workflow:
+1. Edit or append a row in prompts.csv with the new or updated prompt.
+2. Commit the change with a message indicating the prompt added or updated.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~30x per month
+- Files: prompts.csv
+
+---
+id: awesome-chatgpt-prompts-workflow-update-multiple-i18n-language-files
+trigger: "when doing update multiple i18n language files"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Workflow Update Multiple I18n Language Files
+
+## Action
+
+Follow the update-multiple-i18n-language-files workflow:
+1. Edit multiple language JSON files in the messages/ directory.
+2. Optionally update related UI or feature files to use the new translations.
+3. Commit all changes together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: messages/ar.json, messages/de.json, messages/el.json
+
+---
+id: awesome-chatgpt-prompts-workflow-update-contributing-or-issue-templates
+trigger: "when doing update contributing or issue templates"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Workflow Update Contributing Or Issue Templates
+
+## Action
+
+Follow the update-contributing-or-issue-templates workflow:
+1. Edit CONTRIBUTING.md and/or files in .github/ISSUE_TEMPLATE/.
+2. Commit the changes together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: CONTRIBUTING.md, .github/ISSUE_TEMPLATE/config.yml, .github/ISSUE_TEMPLATE/new_prompt.yml
+
+---
+id: awesome-chatgpt-prompts-workflow-feature-or-refactor-multiple-related-components
+trigger: "when doing feature or refactor multiple related components"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Workflow Feature Or Refactor Multiple Related Components
+
+## Action
+
+Follow the feature-or-refactor-multiple-related-components workflow:
+1. Edit or create several related files (e.g., components, API routes, pages).
+2. Update logic, UI, or data fetching as needed.
+3. Commit all related changes together.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: src/app/[username]/page.tsx, src/app/categories/[slug]/page.tsx, src/app/prompts/page.tsx
+
+---
+id: awesome-chatgpt-prompts-camelcase-files
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Camelcase Files
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.files
+- Examples in src/lib/auth/index.ts
+
+---
+id: awesome-chatgpt-prompts-camelcase-functions
+trigger: "When defining a function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: awesome-chatgpt-prompts-pascalcase-classes
+trigger: "When defining a class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: awesome-chatgpt-prompts-screaming-snake-constants
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Screaming Snake Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: awesome-chatgpt-prompts-import-alias
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Import Alias
+
+## Action
+
+Use import aliases instead of relative paths where possible
+
+## Evidence
+
+- Pattern in importStyle: alias
+
+---
+id: awesome-chatgpt-prompts-named-exports
+trigger: "When exporting functions or components"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: awesome-chatgpt-prompts-vitest-pattern
+trigger: "When writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Vitest Pattern
+
+## Action
+
+Use vitest as the testing framework and name test files with *.test.ts
+
+## Evidence
+
+- Pattern in testing.framework
+- Pattern in testing.filePattern
+
+---
+id: awesome-chatgpt-prompts-vi-mock
+trigger: "When mocking modules in tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Vi Mock
+
+## Action
+
+Use vi.mock for mocking
+
+## Evidence
+
+- Pattern in testing.mockingStyle
+
+---
+id: awesome-chatgpt-prompts-coverage-config
+trigger: "When configuring tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Coverage Config
+
+## Action
+
+Enable coverage configuration
+
+## Evidence
+
+- Pattern in testing.coverageConfig
+
+---
+id: awesome-chatgpt-prompts-unit-integration-tests
+trigger: "When writing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Unit Integration Tests
+
+## Action
+
+Write both unit and integration tests as appropriate
+
+## Evidence
+
+- Pattern in testing.testTypes
+
+---
+id: awesome-chatgpt-prompts-commit-prefix
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Commit Prefix
+
+## Action
+
+Start the commit message with a prefix: feat, fix, chore, or refactor
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Seen in commit: fix(auth): update NextAuth session when profile is changed
+
+---
+id: awesome-chatgpt-prompts-commit-scope
+trigger: "When writing a commit message for a specific area"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Commit Scope
+
+## Action
+
+Include the scope in parentheses after the prefix (e.g., fix(auth): ...)
+
+## Evidence
+
+- Seen in commit: fix(auth): add name and picture fields to JWT type declaration
+
+---
+id: awesome-chatgpt-prompts-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Commit Length
+
+## Action
+
+Keep the commit message concise, around 44 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: awesome-chatgpt-prompts-update-or-add-prompt
+trigger: "When someone wants to add a new prompt or update the content of an existing prompt"
+confidence: 0.99
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Update Or Add Prompt
+
+## Action
+
+Edit or append a row in prompts.csv and commit the change with a message indicating the prompt added or updated
+
+## Evidence
+
+- Workflow: update-or-add-prompt
+- Files: prompts.csv
+- Frequency: ~30x/month
+
+---
+id: awesome-chatgpt-prompts-update-multiple-i18n-language-files
+trigger: "When someone wants to introduce or update translations for new features, prompts, or UI elements"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Update Multiple I18n Language Files
+
+## Action
+
+Edit multiple language JSON files in the messages/ directory and commit all changes together
+
+## Evidence
+
+- Workflow: update-multiple-i18n-language-files
+- Files: messages/*.json
+- Frequency: ~3x/month
+
+---
+id: awesome-chatgpt-prompts-update-contributing-or-issue-templates
+trigger: "When someone wants to clarify, update, or add contribution instructions or issue reporting templates"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Update Contributing Or Issue Templates
+
+## Action
+
+Edit CONTRIBUTING.md and/or files in .github/ISSUE_TEMPLATE/ and commit the changes together
+
+## Evidence
+
+- Workflow: update-contributing-or-issue-templates
+- Files: CONTRIBUTING.md, .github/ISSUE_TEMPLATE/*
+- Frequency: ~2x/month
+
+---
+id: awesome-chatgpt-prompts-feature-or-refactor-multiple-related-components
+trigger: "When someone wants to add a new feature or refactor logic that spans multiple files/components"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/awesome-chatgpt-prompts
+---
+
+# Awesome Chatgpt Prompts Feature Or Refactor Multiple Related Components
+
+## Action
+
+Edit or create several related files (e.g., components, API routes, pages), update logic/UI/data fetching as needed, and commit all related changes together
+
+## Evidence
+
+- Workflow: feature-or-refactor-multiple-related-components
+- Files: src/app/*, src/components/*
+- Frequency: ~2x/month
+

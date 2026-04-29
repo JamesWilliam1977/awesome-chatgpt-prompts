@@ -1,0 +1,6 @@
+interface:
+  display_name: "Awesome Chatgpt Prompts"
+  short_description: "Repo-specific patterns and workflows for awesome-chatgpt-prompts"
+  default_prompt: "Use the awesome-chatgpt-prompts repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
